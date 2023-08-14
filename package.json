@@ -1,0 +1,25 @@
+{
+  "private": "true",
+  "name": "facebook-clone",
+  "version": "1.0.0",
+  "description": "Facebook clone using React.js, Node.js, GraphQL & TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "husky install",
+    "start:web": "yarn workspace facebook-clone start",
+    "start:server": "yarn workspace  dev",
+    "build:web": "yarn workspace facebook-clone build",
+    "build:server": "yarn workspace facebook-clone build",
+    "build:all": "yarn workspace facebook-clone build && yarn workspace facebook-clone-server build"
+  },
+  "author": "Mike Chiloane",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "husky": "^7.0.4"
+  },
+  "workspaces": [
+    "packages/**"
+  ]
+}
